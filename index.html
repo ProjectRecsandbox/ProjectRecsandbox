@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecSandbox</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+        .hero {
+            background: #f9f9f9;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+        .btn-secondary {
+            background: #e0e0e0;
+            color: #333;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        footer {
+            margin-top: 5px;
+            font-size: 0.85em;
+            color: #666;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .modal {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 30px;
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <strong>RecSandbox</strong>
+        <div>
+            <a href="#">RecSandbox</a>
+            <a href="#">Places</a>
+            <a href="#">Make things</a>
+            <a href="#">Controls</a>
+            <a href="#">Create account</a>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <h1>Hang out, build stuff, crash cars.</h1>
+        <p>RecSandbox is a free fan-made social game inspired by Rec Room. Play on a flat screen or in VR.</p>
+        <a href="#" class="btn">Get the game</a>
+        <a href="#" class="btn btn-secondary">Look around</a>
+    </div>
+
+    <div style="margin-top: 20px;">
+        <a href="#" class="btn">PLAY</a>
+        <a href="#" class="btn btn-secondary">SWITCH ACCOUNT</a>
+        <a href="#">Language</a>
+    </div>
+
+    <h2>Places to go</h2>
+    <p>You spawn in your dorm. Open your watch, press Play, and head out.</p>
+
+    <h3>The dorm</h3>
+    <p>A loft with a desk and ladder, a bed, windows, and a mirror that really shows your reflection.</p>
+    <p><a href="#">Rec SandBox</a></p>
+
+    <h3>The Rec Center</h3>
+    <p>The main hall with the big sign, three tiers, an upstairs with stairs, and a door to the cafeteria.</p>
+
+    <h3>The cafeteria</h3>
+    <p>Grab food from the machine, pull up a chair, and sit with friends.</p>
+
+    <h3>Crash Zone</h3>
+    <p>A big playground of ramps, crates, and barrels. Smash through it and watch your car dent.</p>
+
+    <h2>Make it yours</h2>
+    <p>Build rooms, dress your player, and play together.</p>
+
+    <h3>Maker Pen</h3>
+    <p>Open your backpack and place cubes, balls, ramps, pizza, burgers, and more. Your creations are saved in each room.</p>
+
+    <h3>Customize your player</h3>
+    <p>Pick your skin, shirt, pants, and hat. Your look is saved with your account.</p>
+
+    <h3>Flat screen or VR</h3>
+    <p>Play with a keyboard and mouse, or put on a headset and use your hands. In VR your avatar follows your head and controllers.</p>
+
+    <h3>Your watch</h3>
+    <p>Press Y to open your watch. Check your profile, press Play to travel, or open your Backpack.</p>
+
+    <h3>Real car damage</h3>
+    <p>Hits slow you down, pull you to one side, and knock parts off. Press F to repair.</p>
+
+    <h3>Accounts that stay</h3>
+    <p>Create an account once and stay signed in. Your look and creations are waiting next time.</p>
+
+    <h2>Controls</h2>
+    <p>Everything you need on day one.</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Action</th>
+                <th>Flat screen</th>
+                <th>VR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Move and jump</td>
+                <td>W A S D and Space</td>
+                <td>Left stick walk, right stick snap-turn</td>
+            </tr>
+            <tr>
+                <td>Open the watch</td>
+                <td>Y</td>
+                <td>Left controller Y button</td>
+            </tr>
+            <tr>
+                <td>Maker Pen</td>
+                <td>Click to place, right-click to delete, R to rotate, wheel to resize</td>
+                <td>Right trigger place, A delete, B rotate, right stick resize</td>
+            </tr>
+            <tr>
+                <td>Drive in Crash Zone</td>
+                <td>W / S gas and brake, A / D steer, Space drift</td>
+                <td>Right trigger gas, left trigger brake, left stick steer</td>
+            </tr>
+            <tr>
+                <td>See yourself</td>
+                <td>V for selfie view, or E at the mirror</td>
+                <td>Look in the dorm mirror</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Get RecSandbox</h2>
+    <p>Free fan game made in Godot 4.3 or newer. Unzip, open the folder in Godot, and press F5.</p>
+
+    <h3>Flat screen</h3>
+    <p>Play with a keyboard and mouse on a PC or Mac.</p>
+    <ol>
+        <li>Unzip RecSandbox.zip</li>
+        <li>Import project.godot in Godot</li>
+        <li>Press F5 and create an account</li>
+    </ol>
+    <p><a href="#" class="btn">Download</a></p>
+
+    <h3>VR</h3>
+    <p>For Meta Quest 3 and Pro, or a PC headset through SteamVR or Oculus.</p>
+    <ol>
+        <li>Unzip RecSandboxVR.zip</li>
+        <li>Import it in Godot</li>
+        <li>Start your headset, then press F5</li>
+    </ol>
+    <p><a href="#" class="btn">Download</a></p>
+
+    <div class="modal">
+        <h2>Create your account</h2>
+        <p>Pick a name and a shirt color.</p>
+        <p><strong>Username</strong> | <strong>Shirt color</strong></p>
+        <a href="#" class="btn">Save account</a>
+        <a href="#" class="btn btn-secondary">Cancel</a>
+        <div style="margin-top: 15px;">
+            <a href="#">Change look</a> | <a href="#">Delete account</a> | <a href="#">Done</a>
+        </div>
+    </div>
+
+    <div class="modal">
+        <h2>Secret room</h2>
+        <p>Enter the code to unlock.</p>
+        <p><strong>Code</strong></p>
+        <a href="#" class="btn">Unlock</a>
+        <a href="#" class="btn btn-secondary">Cancel</a>
+    </div>
+
+    <p style="margin-top: 30px;"><em>Welcome to RecSandbox.</em></p>
+    <p><a href="#">Close</a></p>
+    <p><a href="#">Enter a code</a></p>
+
+    <footer>
+        <p><strong>RecSandbox™</strong> © 2026 AD (Austin DeHart). All rights reserved. The RecSandbox logo is original artwork and may not be copied or used in other projects without permission.</p>
+        <p>RecSandbox is an unofficial fan game. It is not made by, affiliated with, or endorsed by Rec Room Inc. Rec Room and Rec.net belong to their owners.</p>
+    </footer>
+
+</body>
+</html>
